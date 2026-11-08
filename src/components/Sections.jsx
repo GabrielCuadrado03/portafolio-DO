@@ -297,7 +297,12 @@ export const Footer = () => (
   <footer className="py-12 bg-white dark:bg-dark-bg border-t border-gray-100 dark:border-white/5">
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
       <div className="text-2xl font-bold dark:text-white">DO<span className="text-secondary">.</span></div>
-      <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Deysy. Todos los derechos reservados.</p>
+            <div className="flex flex-col items-center md:items-start gap-1 text-center md:text-left">
+        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Deysy Ortiz. Todos los derechos reservados.</p>
+        <p className="text-gray-400 dark:text-gray-500 text-xs tracking-wide">
+          Arquitectura y desarrollo web: <span className="font-semibold text-gray-700 dark:text-gray-300">Ing. Gabriel Cuadrado</span>
+        </p>
+      </div>
       <div className="flex gap-6">
         {social.map(item => (
           <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2 text-sm">
