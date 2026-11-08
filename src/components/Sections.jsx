@@ -297,11 +297,17 @@ export const Footer = () => (
   <footer className="py-12 bg-white dark:bg-dark-bg border-t border-gray-100 dark:border-white/5">
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
       <div className="text-2xl font-bold dark:text-white">DO<span className="text-secondary">.</span></div>
-            <div className="flex flex-col items-center md:items-start gap-1 text-center md:text-left">
+      <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
         <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Deysy Ortiz. Todos los derechos reservados.</p>
-        <p className="text-gray-400 dark:text-gray-500 text-xs tracking-wide">
-          Arquitectura y desarrollo web: <span className="font-semibold text-gray-700 dark:text-gray-300">Ing. Gabriel Cuadrado</span>
-        </p>
+        <a 
+          href="https://wa.me/593984951682?text=Hola%20Ing.%20Gabriel%20Cuadrado,%20vi%20tu%20trabajo%20en%20el%20portafolio%20de%20Deysy%20Ortiz." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-gray-100 hover:bg-emerald-500/10 text-gray-600 hover:text-emerald-600 dark:bg-white/5 dark:hover:bg-emerald-500/10 dark:text-gray-400 dark:hover:text-emerald-400 border border-gray-200 hover:border-emerald-500/40 dark:border-white/10 dark:hover:border-emerald-500/30 transition-all duration-300 shadow-sm"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Desarrollado por <strong>Ing. Gabriel Cuadrado</strong></span>
+        </a>
       </div>
       <div className="flex gap-6">
         {social.map(item => (
